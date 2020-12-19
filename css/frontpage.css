@@ -18,3 +18,7 @@ body {
   color: white;
   border-radius: 6px;
 }
+
+.label-sm {
+  font-size: 14px !important;
+}
