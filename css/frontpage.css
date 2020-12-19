@@ -10,7 +10,6 @@ body {
   border-radius: 6px;
 }
 
-
 .customiseText2{
   padding: 10px;
   text-align: center;
@@ -21,4 +20,8 @@ body {
 
 .label-sm {
   font-size: 14px !important;
+}
+
+div.dataTables_wrapper {
+  margin-bottom: 3em;
 }

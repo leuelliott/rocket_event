@@ -13,6 +13,10 @@ function deleteUser(id, name) {
     removeData(id, name);
 }
 
+function deleteUser2(name){
+    alert("Happy " + name );
+}
+
 function eventData() {
     let requestObject = new XMLHttpRequest();
     requestObject.open("GET", "https://projects.deelesisuanu.com/elliot-events/eventData");
@@ -34,7 +38,7 @@ function eventData() {
                                         <td>${element.description}</td>
                                         <td>
                                             <span>
-                                                <a onclick="deleteUser('${element.id}', '${element.name}')" href="javascript:void(0);" class="btn btn-danger remove-particular-event">Delete Event</a>
+                                            <!-- a onclick="deleteUser('${element.id}', '${element.name}')" href="javascript:void(0);" class="btn btn-danger remove-particular-event">Delete Event</a -->
                                             </span>
                                         </td>
                                     </tr>`;
@@ -94,12 +98,13 @@ function removeData(id, name) {
 
 $(document).ready(function () {
 
-    $('#example').DataTable({
+    /* $('#example').DataTable({
         paging: true
     });
-    $('#example2').DataTable();
+    $('#example2').DataTable(); */
     
     // $('.mainUserTable').DataTable();
+    $('table.mainUserTable').DataTable();
 
     $("#eventDescription").summernote();
     $("#btnSpinner").hide();
