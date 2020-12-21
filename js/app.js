@@ -89,7 +89,8 @@ $(document).ready(function () {
 
         const eventDescription = $("#eventDescription").summernote("code");
         const eventName = $("#eventName").val();
-        const feat_icon = $("#feat_icon").val();
+        /* const feat_icon = $("#feat_icon").val(); */
+        const feat_icon = $("#icon")[0].files[0];
         const eventDateTime = $("#eventDateTime").val();
 
         if (eventName == "" || eventDateTime == "" || feat_icon == "") {
