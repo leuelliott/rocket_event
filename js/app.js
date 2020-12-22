@@ -45,6 +45,7 @@ function eventData() {
                 }
             }
             document.getElementById("tableData").innerHTML = output;
+            $('#example').DataTable();
             $("#eventSpinner").hide();
         }
     };
@@ -69,8 +70,6 @@ function removeData(id, name) {
 
 $(document).ready(function () {
 
-    $('#example').DataTable();
-    
     $("#eventDescription").summernote();
     $("#btnSpinner").hide();
 

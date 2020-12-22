@@ -23,6 +23,7 @@ function eventBookingData() {
                 }
             }
             document.getElementById("tableData2").innerHTML = output;
+            $('#example').DataTable();
             $("#eventSpinner").hide();
         }
     };
@@ -31,7 +32,6 @@ function eventBookingData() {
 
 $(document).ready(function () {
 
-    $('#example').DataTable();
     eventBookingData();
 
 });
