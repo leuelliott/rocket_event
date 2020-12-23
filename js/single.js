@@ -14,7 +14,7 @@ function eventData(id) {
                     const element = responseData[key];
                     $("#eventTitle").html(element.name);
                     $("#eventdesc").html(element.description);
-                    $("#eventDateTime").html(element.dateTime);
+                    $("#eventDateTime").html(element.fullDate);
                     $("#eventImg").attr("src", element.icon);
                     $("#rowMainer").show();
                 }
@@ -29,6 +29,7 @@ $(document).ready(function () {
     
     const params = new URLSearchParams(window.location.search);
     const eventId = params.get('eid');
+
     eventData(eventId);
 
     function generateFormData(object) {
