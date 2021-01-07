@@ -14,7 +14,7 @@ function eventData() {
                     const element = responseData[key];
                     output += `<div class="col-md-4 mb-5">
                                 <div class="card h-100">
-                                <img class="card-img-top" src="${element.icon}" alt="">
+                                <img class="card-img-top" src="${element.icon}" alt="" height="350">
                                 <div class="card-body">
                                     <h4 class="card-title">${element.name}</h4>
                                     <p class="card-text"></p>
